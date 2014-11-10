@@ -8,7 +8,7 @@ window.onload = function(){
 
 
 			// Din kod här.
-			
+	try{	
 			
 	var today = new Date();		
 	var birthdayDate = new Date(date);//(year, month-1, day, 12);
@@ -23,7 +23,10 @@ window.onload = function(){
 	var days = Math.floor((birthdayDate - today) / (1000*60*60*24));
     return(days);
 
-
+	}
+	catch(error){
+		console.log("Vänligen mata in din födelsedag i siffror.");
+	}
 
 	};
 	// ------------------------------------------------------------------------------
