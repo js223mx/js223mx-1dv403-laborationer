@@ -8,7 +8,20 @@ window.onload = function(){
 
 
 			// Din kod här.
-
+			
+			
+	var today = new Date();		
+	var birthdayDate = new Date(date);//(year, month-1, day, 12);
+    
+    birthdayDate.setFullYear(today.getFullYear());
+    today.setDate(today.getDate()-1);
+    
+    if(birthdayDate < today){
+    	birthdayDate.setFullYear(birthdayDate.getFullYear()+1);
+    }
+	
+	var days = Math.floor((birthdayDate - today) / (1000*60*60*24));
+    return(days);
 
 
 

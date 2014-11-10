@@ -14,7 +14,7 @@ window.onload = function(){
 		turn++;
 		
 		if(number == secret){
-			return [true, "Grattis du vann! Det hemliga talet var " +number+ " och du behövde " +turn+ " gissningar för att hitta det."];
+			return [true, "Grattis du vann! Det hemliga talet var " +secret+ " och du behövde " +turn+ " gissningar för att hitta det."];
 		}
 		else if(number<secret && number>=0){
 			return [false, "Det hemliga talet är högre!"];

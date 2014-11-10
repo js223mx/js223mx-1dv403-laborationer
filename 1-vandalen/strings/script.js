@@ -3,7 +3,9 @@
 window.onload = function(){
 
 	// I denna funktion ska du skriva koden för att hantera "spelet"
+	
 	var convertString = function(str){
+	if(isNaN(str)){
 	var i;
 	var text = "";
 		// Plats för förändring.		
@@ -12,19 +14,22 @@ window.onload = function(){
 	
 	for(i = 0; i < str.length; i += 1){
 		
-		if(str.charCodeAt(i) > 64 && str.charCodeAt(i) < 91 || str.charCodeAt(i) > 195 && str.charCodeAt(i) < 215){
+		if((str.charCodeAt(i) > 64 && str.charCodeAt(i) < 91) || (str.charCodeAt(i) > 195 && str.charCodeAt(i) < 215)){
 		
-		text = text + str.charCodeAt[i].replace("A","#").toLowerCase();
+		 text += str.charAt(i).replace("A","#").toLowerCase();
 		}
 		else {
-		text = text + str.charCodeAt[i].replace("a","#").toUpperCase();
+		 text += str.charAt(i).replace("a","#").toUpperCase();
 		}
-		return(str);
-	
-	}
 		
 	}
+	return(text);
+	}
+	else{
+		return["Fel input! Du måse ange bokstäver."];
+	}	
 	
+  
 	};
 	// ------------------------------------------------------------------------------
 
