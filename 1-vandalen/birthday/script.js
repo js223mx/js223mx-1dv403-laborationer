@@ -17,7 +17,18 @@ window.onload = function(){
 	if(isNaN(birthdayDate)){
 		throw {'message':"Ej giltig inmatning."};
 	}
-	if(birthdayDate > today){
+	//if(birthdayDate > today){
+	//	throw {'message':"Fel! Du är inte född än."};
+	//}
+	
+	//if(birthdayDate > today) beter sig konstigt 
+	
+	if(
+		(birthdayDate.getFullYear() > today.getFullYear()) ||
+		(birthdayDate.getFullYear() === today.getFullYear() && birthdayDate.getMonth() > today.getMonth() ) || 
+		(birthdayDate.getFullYear() === today.getFullYear() && birthdayDate.getMonth() === today.getMonth() && birthdayDate.getDate() > today.getDate())
+	)
+	{
 		throw {'message':"Fel! Du är inte född än."};
 	}
     

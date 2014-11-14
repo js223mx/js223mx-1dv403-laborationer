@@ -5,7 +5,7 @@
 var makePerson = function(persArr) { 
     
     // hittade map funktionen på https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map
-    var names = persArr.map(function (pers){ return pers.name;}).sort(function(a, b) { return a.localeCompare(b) }).join(", ");//Bryter ut name ur data-arrayen och lägger i names, sen kommer den sorta efter ÅÄÖ uställter för ÄÅÖ, sen sätter du skapar du ett mellanrum efter var "j"
+    var names = persArr.map(function (pers){ return pers.name;}).sort(function(a, b) { return a.localeCompare(b) }).join(", ");//Bryter ut name ur data-arrayen och lägger i names, sen kommer den sorta efter ÅÄÖ istället för ÄÅÖ, sen sätter du skapar du ett mellanrum efter var "j"
     var ages = persArr.map(function (ages){ return ages.age;});//bryter ut åldern ur data-arrayen och lägger i ages.
     
     ages.sort(function(a, b){return a-b});//sorterar ages i stegrande ordning
