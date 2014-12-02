@@ -1,0 +1,101 @@
+body{
+    background-color: #99CCFF;
+}
+#content{
+    border: 3px solid #000;
+    background-color: #FFFFFF;
+    width: 400px;
+    height: 400px;
+    margin-right: auto;
+    margin-left: auto;
+    
+}
+
+    
+
+h1 {
+    color:#660099;
+    text-align: center;
+    font-size: 345%;
+    font-family: 'Merienda One', sans-serif;
+}
+#meddelande{
+    margin-left: auto;
+    margin-right: auto;
+    padding-top:5px;
+    padding-bottom:5px;
+    width: 400px;
+    
+}
+
+#meddelande textarea{
+    width: 388px;
+    overflow: auto;
+    padding: 4px;
+    border: 3px solid #000;
+    
+}
+#wrapper{
+    display: inline-box;
+    margin-left: auto;
+    margin-right: auto;
+    width: 540px;
+    padding:45px 0px 25px 0px;
+    background-color: #9999CC;
+    border-color: #000;
+    border: double;
+    text-align: right;
+    font-family: 'Merienda One', sans-serif;
+}
+.myMessage {
+    float:left;
+    color:#9999CC;
+}
+#myMessages{
+    height: 200px;
+    overflow: auto;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: auto;
+    text-align: left;
+    font-weight:bold;
+    display: block;
+    padding: 5px;
+}
+p{
+    display: block;
+    padding: 5px;
+    margin: 2px;
+    
+}
+#count{
+    
+    text-align: right;
+    margin-bottom:2px;
+    margin-top: 2px;
+}
+footer{
+   
+    text-align: right;
+    font-size: 75%;
+}
+.deleteMessage{
+    background-image: url("pics/trashcan.png");
+    width:33px;
+    height: 33px;
+    display: block;
+    float: right;
+    padding: 3px;
+    background-repeat: no-repeat;
+}
+.messageTime{
+    margin-top: 3px;
+    margin-bottom: 3px;
+    background-image: url("pics/clock2.png");
+    width:30px;
+    height: 30px;
+    display: block;
+    float: right;
+    padding: 3px;
+    background-repeat: no-repeat;
+}
