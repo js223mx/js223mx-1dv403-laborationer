@@ -49,6 +49,7 @@ var MessageBoard = {
    
    renderMessage: function(messageID){
        
+       
        //hämtar ett meddelande och lägger det i en p-tag
        var myText = document.createElement("p"),
         myMessages = document.getElementById("myMessages"),
