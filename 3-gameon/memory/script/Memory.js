@@ -4,8 +4,8 @@ var Memory = {
     
     memoArr: [],
     choiseOfCard: [],
-    rows: 2,
-    cols: 2,
+    rows: 4,
+    cols: 4,
     cardsFliped:0,
     finnishedGame: 0,
     numberOfTrys: 0,
@@ -38,21 +38,21 @@ var Memory = {
         
           for(var j = 0; j < cols; j++){
           
-           var td = document.createElement("td");
-           tr.appendChild(td);
+            var td = document.createElement("td");
+            tr.appendChild(td);
           
             var a = document.createElement("a");
             a.href = "#";
             td.appendChild(a);
           
-          var img = document.createElement("img");
-          img.src = "pics/0.png";
-          
-          a.appendChild(img);
-          
-          Memory.turnBrick(cardNumber, a);
-          
-          cardNumber += 1;
+            var img = document.createElement("img");
+            img.src = "pics/0.png";
+            
+            a.appendChild(img);
+            
+            Memory.turnBrick(cardNumber, a);
+            
+            cardNumber += 1;
         }
       }
       
