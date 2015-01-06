@@ -1,0 +1,35 @@
+html{
+  height: 100%;  
+}
+body{
+    background-image:url('slanbar.jpg');
+    
+    background-repeat: no-repeat;
+    background-size:cover;
+     
+    
+}
+
+#Myfooter{
+    width:1904px;
+    height:55px;
+    border: solid hsla(228,50%,50%,0.4);
+    background-color:hsla(228,25%,10%,0.4);
+    padding:3px;
+    position:absolute;
+    bottom:0;
+    left:0;
+}
+.iconImg{
+    margin-top: 3px;
+   
+}
+#Myfooter a:hover, a:focus {
+    position: relative;
+    -webkit-transform: scale(1.5);
+    -ms-transform: scale(1.5);
+    -moz-transform: scale(1.5);
+    -o-transform: scale(1.5);
+    transform: scale(1.5);
+    z-index: 1;
+ }
