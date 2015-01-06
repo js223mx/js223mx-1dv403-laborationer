@@ -2,34 +2,51 @@ html{
   height: 100%;  
 }
 body{
+    background-color: black;
+}
+#Mymain{
+    display: block;
+    width: 1024px;
+    height: 640px;
+    border: 2px solid hsla(228,50%,50%,0.9);
+    border-top-style: solid;
+    border-right-style: solid;
+    border-left-style: solid;
+    border-top-right-radius: 18px;
+    border-top-left-radius: 18px;
+    border-bottom-right-radius: 18px;
+    border-bottom-left-radius: 18px;
     background-image:url('slanbar.jpg');
-    
     background-repeat: no-repeat;
-    background-size:cover;
-     
+    margin-right:auto;
+    margin-left: auto;
     
 }
-
 #Myfooter{
-    width:1904px;
+    width:1020px;
     height:55px;
+    margin-left:auto;
+    margin-right: auto;
+    margin-top: 582px;
     border: solid hsla(228,50%,50%,0.4);
     background-color:hsla(228,25%,10%,0.4);
-    padding:3px;
-    position:absolute;
+    
+    border-bottom-left-radius: 18px;
+    border-bottom-right-radius: 18px;
     bottom:0;
     left:0;
 }
 .iconImg{
     margin-top: 3px;
-   
+    margin-left:3px;
+   -webkit-transition:-webkit-tranform.2s ease-in-out;
 }
-#Myfooter a:hover, a:focus {
-    position: relative;
-    -webkit-transform: scale(1.5);
-    -ms-transform: scale(1.5);
-    -moz-transform: scale(1.5);
-    -o-transform: scale(1.5);
-    transform: scale(1.5);
-    z-index: 1;
+.iconImg:hover{
+    
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    transform: scale(1.2);
+    
  }
