@@ -64,12 +64,12 @@ body{
 #imgFolder{
     display:block;
     position:relative;
-    height:415px;
-    width:450px;
+    height:458px;
+    width:347px;
     border: solid hsla(228,50%,50%,0.9);
     border-radius:12px;
-    left:16%;
-    top:8%;
+    margin-left:70px;
+    margin-top:70px;
     
     
  }
@@ -102,8 +102,8 @@ body{
     border-bottom:solid hsla(228,50%,50%,0.9);
     background-image:url('contback.jpg');
     float:left;
-    width:450px;
-    height:326px;
+    width:347px;
+    height:364px;
     overflow:auto;
     overflow-x:hidden;
   

@@ -7,7 +7,7 @@
        
          //Gör menuiconen till en knapp
          menuIcon.onclick = function(){
-             var myMain = document.getElementById("Mymain");
+             var myMain = document.getElementById("deskdiv");
              
              //Kollar ifall det redan finns ett fönster och förhindrar att fler öppnas.
              if (myMain.firstElementchild){
@@ -101,9 +101,6 @@
                    imageClick.appendChild(image);
               
              }
-             
-             
-             
          });
      };
  },
@@ -111,7 +108,7 @@
  changeBackground: function (image, ID) {
   
    ID.onclick = function (){
-    document.getElementById("Mymain").style.background ="url('" + image + "') repeat";
+    document.getElementById("Mymain").style.background = "url('" + image + "') repeat";
    };
  },
  
@@ -132,7 +129,6 @@
      width = thumbImages[x].thumbWidth;
      }
    
-    
   }
    return {
            height: height,
