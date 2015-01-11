@@ -17,7 +17,7 @@ body{
     border-bottom-right-radius: 18px;
     border-bottom-left-radius: 18px;
     background-image:url('slanbar.jpg');
-    background-repeat: no-repeat;
+    background-repeat:no-repeat;
     margin-right:auto;
     margin-left: auto;
     
@@ -36,12 +36,23 @@ body{
     bottom:0;
     left:0;
 }
-.iconImg{
+.button {
+    float:left;
+    display:block;
+    height:inherit;
+    margin-left:5px;
+    -webkit-transition:-webkit-tranform.2s ease-in-out;
+    
+}
+ .button:hover {
+        -webkit-transform:scale(1.2);
+    }
+#click{
     margin-top: 3px;
     margin-left:3px;
    -webkit-transition:-webkit-tranform.2s ease-in-out;
 }
-.iconImg:hover{
+#click:hover{
     
     -webkit-transform: scale(1.2);
     -ms-transform: scale(1.2);
@@ -50,3 +61,98 @@ body{
     transform: scale(1.2);
     
  }
+#imgFolder{
+    display:block;
+    position:relative;
+    height:415px;
+    width:450px;
+    border: solid hsla(228,50%,50%,0.9);
+    border-radius:12px;
+    left:16%;
+    top:8%;
+    
+    
+ }
+ #topDiv {
+     display:block;
+     height:54px;
+     background-image:url('clouds.jpg');
+     border-top-left-radius:12px;
+     border-top-right-radius:12px;
+ }
+ .topImage {
+     float:left;
+     display:block;
+     padding:2px;
+ }
+
+ .closeWindow {
+     float:right;
+     display:block;
+     margin-right:3px;
+     -webkit-transition: -webkit-transform .2s ease-in-out;
+ }
+ 
+ .closeWindow:hover {
+     -webkit-transform: scale(0.8);
+}
+#picContainer {
+    display:block;
+    border-top:solid hsla(228,50%,50%,0.9);
+    border-bottom:solid hsla(228,50%,50%,0.9);
+    background-image:url('contback.jpg');
+    float:left;
+    width:450px;
+    height:326px;
+    overflow:auto;
+    overflow-x:hidden;
+  
+}
+#botDiv {
+    display:block;
+    float:left;
+    width:inherit;
+    height:35px;
+    background-image:url('clouds.jpg');
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+}
+#botDiv img {
+    padding: 5px;
+}
+
+#folderText {
+    float:left;
+    padding:3px;
+    margin-top:3px;
+    font-style: oblique;
+    font-weight: bold;
+}
+#botText {
+    float:right;
+    padding:3px;
+    margin-right:3px;
+    margin-top:3px;
+    font-style: oblique;
+    font-weight: bold;
+}
+
+figure {
+    display: block;
+    float:left;
+    text-align:center;
+    margin:10px;
+    padding: 6px;
+    background-color: #5C8AE6;
+    border-radius:9px;
+    -webkit-transition: webkit-transform .2s ease-in-out;
+}
+
+figure a {
+    display:block;
+}
+
+figure:hover {
+    -webkit-transform:scale(1.2);
+}
+
